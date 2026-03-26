@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,61 +9,58 @@
 
 <body>
 
-<!-- Page 1 -->
+<audio id="music" src="music.mp3"></audio>
+
+<!-- PAGE 1 -->
 <div class="page active" id="page1">
-<h1>Loading your birthday wishes... 🎁</h1>
+<h1 class="fade">Loading your birthday wishes... 🎁</h1>
 </div>
 
-<!-- Page 2 -->
+<!-- PAGE 2 -->
 <div class="page" id="page2">
 <h2>A cutie pie born on 🎂</h2>
-<h1>10 March 2008</h1>
-<h2>Age: 17</h2>
+<h1 id="birth"></h1>
+<h2 id="age"></h2>
 <button onclick="nextPage(3)">Next</button>
 </div>
 
-<!-- Page 3 -->
+<!-- PAGE 3 -->
 <div class="page" id="page3">
 <h1>Start the Surprise 🎉</h1>
-<button onclick="nextPage(4)">Start</button>
+<button onclick="start()">Start</button>
 </div>
 
-<!-- Page 4 -->
+<!-- PAGE 4 -->
 <div class="page" id="page4">
-<h2>🎂 Cake Time</h2>
+
+<div id="flags">🎉🎊🎉🎊🎉</div>
 
 <div class="cake">
 <div class="candle" id="candle"></div>
+<div class="flame" id="flame">🔥</div>
 </div>
 
 <button onclick="decorate()">Decorate 🎀</button>
-<button onclick="lightCandle()">Light the Candle 🕯️</button>
+<button onclick="lightCandle()">Light Candle 🕯️</button>
 <button onclick="showBalloons()">Pop Balloons 🎈</button>
+
+<div id="balloons"></div>
+
+<button onclick="nextPage(5)">Open My Message 💌</button>
+
 </div>
 
-<!-- Balloons -->
+<!-- PAGE 5 -->
 <div class="page" id="page5">
-<h2>Pop the balloons 🎈</h2>
-
-<div class="balloon" onclick="pop(this)">You</div>
-<div class="balloon" onclick="pop(this)">are</div>
-<div class="balloon" onclick="pop(this)">a</div>
-<div class="balloon" onclick="pop(this)">cutie</div>
-
-<button onclick="nextPage(6)">Open My Message 💌</button>
+<h1 class="glow">✨ Happy Birthday 🎂 ✨</h1>
+<button onclick="nextPage(6)">Next</button>
 </div>
 
-<!-- Message -->
+<!-- PAGE 6 -->
 <div class="page" id="page6">
-<h1>Happy Birthday 🎂</h1>
-<button onclick="nextPage(7)">Next</button>
-</div>
-
-<div class="page" id="page7">
 <h2>Wish you a lot of love ❤️ as friends</h2>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
