@@ -13,7 +13,7 @@
 
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
-<h1 class="fade">Loading your birthday wishes... 🎁</h1>
+<h1>Loading your birthday wishes...</h1>
 </div>
 
 <!-- PAGE 2 -->
@@ -33,26 +33,31 @@
 <!-- PAGE 4 -->
 <div class="page" id="page4">
 
-<div id="flags">🎉🎊🎉🎊🎉</div>
+<!-- Decoration -->
+<div class="bunting" id="bunting"></div>
 
+<!-- Cake -->
 <div class="cake">
-<div class="candle" id="candle"></div>
-<div class="flame" id="flame">🔥</div>
+  <div class="layer"></div>
+  <div class="icing"></div>
+  <div class="candle">
+    <div class="flame" id="flame"></div>
+  </div>
 </div>
 
-<button onclick="decorate()">Decorate 🎀</button>
-<button onclick="lightCandle()">Light Candle 🕯️</button>
-<button onclick="showBalloons()">Pop Balloons 🎈</button>
+<button onclick="decorate()">Decorate</button>
+<button onclick="lightCandle()">Light Candle</button>
+<button onclick="showBalloons()">Pop Balloons</button>
 
-<div id="balloons"></div>
+<h2 id="balloonText"></h2>
 
-<button onclick="nextPage(5)">Open My Message 💌</button>
+<button onclick="nextPage(5)">Open My Message</button>
 
 </div>
 
 <!-- PAGE 5 -->
 <div class="page" id="page5">
-<h1 class="glow">✨ Happy Birthday 🎂 ✨</h1>
+<h1>✨ Happy Birthday 🎂 ✨</h1>
 <button onclick="nextPage(6)">Next</button>
 </div>
 
