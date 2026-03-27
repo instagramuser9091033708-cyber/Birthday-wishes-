@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,6 @@
 <body>
 
 <audio id="music" src="music.mp3"></audio>
-
-<canvas id="confetti"></canvas>
 
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
@@ -35,23 +33,25 @@
 <!-- PAGE 4 -->
 <div class="page" id="page4">
 
-  <!-- 🎂 Cake Image -->
-  <div class="cake-container">
-    <img src="cake.png" class="cake-img">
+  <!-- SAFE CAKE (CSS) -->
+  <div class="cake">
+    <div class="layer"></div>
+    <div class="icing"></div>
 
-    <!-- candles -->
-    <div class="candle" style="left:90px; top:20px;"><div class="flame"></div></div>
-    <div class="candle" style="left:120px; top:10px;"><div class="flame"></div></div>
-    <div class="candle" style="left:150px; top:20px;"><div class="flame"></div></div>
+    <div class="candle" style="left:70px;">
+      <div class="flame"></div>
+    </div>
   </div>
 
   <button onclick="lightCandle()">Light Candle 🔥</button>
+
   <button onclick="createBalloons()">Pop Balloons 🎈</button>
 
   <div id="balloonBox"></div>
   <h2 id="message"></h2>
 
   <button onclick="nextPage(5)">Next</button>
+
 </div>
 
 <!-- PAGE 5 -->
