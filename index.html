@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,60 +11,58 @@
 
 <audio id="music" src="music.mp3"></audio>
 
+<!-- Confetti -->
+<canvas id="confetti"></canvas>
+
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
-<h1>Loading your birthday wishes...</h1>
+  <h1>Loading your birthday wishes... 🎁</h1>
 </div>
 
 <!-- PAGE 2 -->
 <div class="page" id="page2">
-<h2>A cutie pie born on 🎂</h2>
-<h1 id="birth"></h1>
-<h2 id="age"></h2>
-<button onclick="nextPage(3)">Next</button>
+  <h2>A cutie pie born on 🎂</h2>
+  <h1 id="birth"></h1>
+  <h2 id="age"></h2>
+  <button onclick="nextPage(3)">Next</button>
 </div>
 
 <!-- PAGE 3 -->
 <div class="page" id="page3">
-<h1>Start the Surprise 🎉</h1>
-<button onclick="start()">Start</button>
+  <h1>Start the Surprise 🎉</h1>
+  <button onclick="start()">Start</button>
 </div>
 
 <!-- PAGE 4 -->
 <div class="page" id="page4">
 
-<!-- Decoration -->
-<div class="bunting" id="bunting"></div>
+  <div class="cake">
+    <div class="layer1"><div class="icing"></div></div>
+    <div class="layer2"><div class="icing"></div></div>
 
-<!-- Cake -->
-<div class="cake">
-  <div class="layer"></div>
-  <div class="icing"></div>
-  <div class="candle">
-    <div class="flame" id="flame"></div>
+    <div class="candle" style="left:70px;"><div class="flame"></div></div>
+    <div class="candle" style="left:95px;"><div class="flame"></div></div>
+    <div class="candle" style="left:120px;"><div class="flame"></div></div>
   </div>
-</div>
 
-<button onclick="decorate()">Decorate</button>
-<button onclick="lightCandle()">Light Candle</button>
-<button onclick="createBalloons()">Pop Balloons</button>
+  <button onclick="lightCandle()">Light Candle 🕯️</button>
+  <button onclick="createBalloons()">Pop Balloons 🎈</button>
 
-<div id="balloonBox"></div>
-<h2 id="message"></h2>
+  <div id="balloonBox"></div>
+  <h2 id="message"></h2>
 
-<button onclick="nextPage(5)">Open My Message</button>
-
+  <button onclick="nextPage(5)">Next</button>
 </div>
 
 <!-- PAGE 5 -->
 <div class="page" id="page5">
-<h1>✨ Happy Birthday 🎂 ✨</h1>
-<button onclick="nextPage(6)">Next</button>
+  <h1>✨ Happy Birthday 🎂 ✨</h1>
+  <button onclick="nextPage(6)">Next</button>
 </div>
 
 <!-- PAGE 6 -->
 <div class="page" id="page6">
-<h2>Wish you a lot of love ❤️ as friends</h2>
+  <h2>Wish you a lot of love ❤️</h2>
 </div>
 
 <script src="script.js"></script>
