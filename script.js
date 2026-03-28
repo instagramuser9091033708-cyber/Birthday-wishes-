@@ -12,20 +12,33 @@ function start(){
   nextPage(4);
 }
 
-window.onload = function(){
-  let today = new Date();
-  let age = today.getFullYear() - birthDate.getFullYear();
+window.onload=function(){
+  let today=new Date();
+  let age=today.getFullYear()-birthDate.getFullYear();
 
-  document.getElementById("birth").innerText = birthDate.toDateString();
-  document.getElementById("age").innerText = "Age: " + age;
-};
+  document.getElementById("birth").innerText=birthDate.toDateString();
+  document.getElementById("age").innerText="Age: "+age;
+}
 
 function lightCandle(){
   document.querySelector(".flame").style.display="block";
 }
 
-let words=["You","are","a","cutie"];
+/* typing effect */
+let words=["You","are","special ❤️"];
 let i=0;
+
+function typeEffect(text,el){
+  let index=0;
+  function typing(){
+    if(index<text.length){
+      el.innerText+=text.charAt(index);
+      index++;
+      setTimeout(typing,80);
+    }
+  }
+  typing();
+}
 
 function createBalloons(){
   let box=document.getElementById("balloonBox");
@@ -35,14 +48,14 @@ function createBalloons(){
   msg.innerText="";
   i=0;
 
-  for(let j=0;j<4;j++){
+  for(let j=0;j<3;j++){
     let b=document.createElement("div");
     b.className="balloon";
-    b.style.background=["red","blue","green","purple"][j];
+    b.style.background=["red","blue","green"][j];
 
     b.onclick=function(){
       if(i<words.length){
-        msg.innerText+=" "+words[i];
+        typeEffect(words[i]+" ",msg);
         i++;
       }
       b.remove();
