@@ -6,7 +6,6 @@ body {
   color:white;
 }
 
-/* pages */
 .page {
   display:none;
   min-height:100vh;
@@ -26,49 +25,36 @@ button {
   border-radius:25px;
   background:white;
   color:#ff4da6;
-  font-size:16px;
 }
 
-/* cake */
-.cake {
+/* 🎂 cake image */
+.cake-container {
   position: relative;
-  width: 150px;
-  margin: 30px auto;
+  width: 250px;
+  margin: 20px auto;
 }
 
-.layer {
-  width: 150px;
-  height: 60px;
-  background: pink;
-  border-radius: 10px;
+.cake-img {
+  width: 100%;
+  height: auto;
 }
 
-.icing {
-  width: 150px;
-  height: 20px;
-  background: white;
-  position: absolute;
-  top: -10px;
-  border-radius: 10px;
-}
-
+/* candle */
 .candle {
-  width: 8px;
+  width: 6px;
   height: 30px;
   background: white;
   position: absolute;
-  top: -40px;
-  left: 70px;
 }
 
 .flame {
   width: 10px;
-  height: 20px;
+  height: 18px;
   background: orange;
   border-radius: 50%;
   position: absolute;
-  top: -20px;
-  left: -1px;
+  top: -18px;
+  left: -2px;
   display: none;
 }
 
