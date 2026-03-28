@@ -14,6 +14,7 @@ body {
   align-items:center;
   flex-direction:column;
 }
+
 .active {
   display:flex;
 }
@@ -25,9 +26,10 @@ button {
   border-radius:25px;
   background:white;
   color:#ff4da6;
+  font-size:16px;
 }
 
-/* simple cake */
+/* cake */
 .cake {
   position: relative;
   width: 150px;
@@ -56,6 +58,7 @@ button {
   background: white;
   position: absolute;
   top: -40px;
+  left: 70px;
 }
 
 .flame {
@@ -65,7 +68,8 @@ button {
   border-radius: 50%;
   position: absolute;
   top: -20px;
-  opacity: 0;
+  left: -1px;
+  display: none;
 }
 
 /* balloons */
@@ -75,4 +79,5 @@ button {
   border-radius: 50%;
   margin: 10px;
   display:inline-block;
+  cursor:pointer;
 }
